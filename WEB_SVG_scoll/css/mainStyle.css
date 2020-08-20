@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+svg{
+    position: relative;
+}
+#rgiht_wheet, #left_wheet{
+    animation: wheel 1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes wheel{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(359deg);
+    }
+}
+
+#box{
+    position: relative;
+}
+#man_onbike{
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+#hat{
+    animation: hat 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes bike{
+    from{
+        transform: rotateX(0deg);
+    }to{
+        transform: rotateX(20deg);
+    }
+}
+@keyframes hat{
+    form{
+        transform:translateY(0%);
+    }to{
+        transform:translateY(30%);
+    }
+}

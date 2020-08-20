@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+
+}
+.button{
+    display: flex;
+    filter: url(#goo);
+}
+section i{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    z-index: 10;
+    color: #ffff;
+
+}
+
+.goo span{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #000000;
+    border-radius: 50%;
+    display: inline-block;
+    transform: translate(-50%,-50%);
+    transition: 1.5s cubic-bezier(0,2,.61,-0.05);
+}
+.goo 
+span:nth-of-type(2),
+span:nth-of-type(3),
+span:nth-of-type(4){
+    width: 60px;
+    height: 60px;
+}
+.button:hover .goo  > span:nth-of-type(2){
+    transform: translate(50px,-30px);
+}
+.button:hover .goo  >span:nth-of-type(3){
+    transform: translate(-80px,40px);
+}
+.button:hover .goo  >span:nth-of-type(4){
+    transform: translate(-90px,-90px);
+}

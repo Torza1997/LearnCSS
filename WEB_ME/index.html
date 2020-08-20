@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tor Thanatos</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="https://kit.fontawesome.com/a55f9ec08c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
+
+</head>
+<body>
+    <section class="head " id ='head'>
+        <div class="menu-bar" id ="menu-bar">
+            <div class="button" id ="button">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nab-bar" id = "nab-bar">
+                <ul class="buttons">
+                    <li class="nav-item"><a href="#content1_" id ="Main">Main</a></li>
+                    <li class="nav-item"><a href="#content2_" id ="Skill">Skill</a></li>
+                    <li class="nav-item"><a href="#content3_" id ="Project">Project</a></li>
+                    <li class="nav-item"><a href="#" id ="Gallery">Gallery</a></li>
+                    <li class="nav-item"><a href="#" id ="contract">contract</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="content1" id="content1_">
+        <div class="container" id="container">
+            <div class="myname" id="myname">
+                <div class="tor_thanatos">
+                    <h1><span class="TOR">TOR</span> Thanatos</h1>
+                    <h2>Web developer</h2>
+                   <!--<span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    <span class="dots"></span>
+                    --> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content2" id="content2_">
+        <div class="dots">
+            <span class="layer" data-speed ="-5">REACT</span>
+            <span class="layer" data-speed ="5"></span>
+            <span class="layer" data-speed ="2">ARDUINO</span>
+            <span class="layer" data-speed ="6">PYTHON</span>
+            <span class="layer" data-speed ="8"></span>
+            <span class="layer" data-speed ="-2"></span>
+            <span class="layer" data-speed ="4">NODE JS</span>
+            <span class="layer" data-speed ="-9"></span>
+            <span class="layer" data-speed ="6">JS/CSS/HTML</span>
+            <span class="layer" data-speed ="-7"></span>
+            <span class="layer" data-speed ="-5"></span>
+            <span class="layer" data-speed ="5"></span>
+            <span class="layer" data-speed ="2">DOCKER</span>
+            <span class="layer" data-speed ="-3"></span>
+            <span class="layer" data-speed ="8">C++/C#</span>
+        </div>
+        <div class="container2" id = "container2"></div>
+    </section>
+
+    <section class="content3" id="content3_">
+        <div class="container3" id = "container3"></div>
+    </section>
+<!-------------------------SVG-------------------------->
+    <svg>
+        <defs>
+         <filter id='goo'>
+          <feGaussianBlur in='SourceGraphic' 
+          stdDeviation='15' result='name'/>
+           <feColorMatrix in='name' mode='matrix'
+               values='1 0 0 0 0
+                       0 1 0 0 0 
+                       0 0 1 0 0
+                       0 0 0 30 -15 ' result='aab'/>
+           <feBlend in='SourceGraphic' in2='aab'/>
+          </filter>
+        </defs>
+       </svg>
+<!-------------------------SVG-------------------------->       
+<script src="js/js.js"></script>
+</body>
+</html>
