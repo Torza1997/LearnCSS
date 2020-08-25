@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+}
+a{
+    text-decoration:none;
+}
+.detail{
+    grid-area: box1;
+}
+.contact-form{
+    grid-area: box2;
+}
+.container{
+    background-image: url('../img/bg_1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    grid-template-columns:repeat(2,1fr);
+    background-color: rgba(48, 48, 48, 0.8);
+    display: grid;
+    grid-template-areas: 
+    "box1 box2";
+}
+.detail{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: #FFF;
+}
+.texts{
+    width: 50%;
+    height: 30%;
+}
+h1 , p{
+    margin-bottom:20px;
+}
+p{
+    color: rgb(122, 122, 122);
+}
+h1{
+    font-size: 2.5rem;
+}
+.texts a{
+    width: 250px;
+    height: 70px;
+    border-radius: 50px;
+    background: #ff0040;
+    font-size: 1rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    color: #FFF;
+}
+.contact-form{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.from_{
+    width: 50%;
+    height: 45%;
+
+}
+
+.from_ form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background: #FFF;
+    border-radius: 10px;
+}
+.from_ form a{
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    background: #ff0040;
+    font-size: .8rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    color: #FFF;
+}
+input{
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #d3d3d3;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    position: relative;
+    left: 10px;
+}
+nav{
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    
+}
+nav ul li{
+    margin: 0 20px;
+    padding: 5px 0;
+    list-style: none;
+}
+nav ul li:hover{
+    transition: .5s;
+    border-bottom: 2px solid #FFF;
+}
+nav a{
+    position: absolute;
+    text-decoration:none;
+    width: 120px;
+    height: 35px;
+    border-radius: 50px;
+    background: #ff0040;
+    font-size: .8rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    right: 200px;
+}
+nav h3{
+    position: absolute;
+    display: flex;
+    left: 200px;
+}
+@media only screen and (max-width: 800px){
+    .overlay{
+        grid-template-columns:repeat(1,auto);
+        grid-template-areas: 
+        "box1"
+        "box2";
+    }
+}
